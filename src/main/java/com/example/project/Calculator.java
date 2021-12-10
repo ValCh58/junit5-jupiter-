@@ -13,7 +13,7 @@ package com.example.project;
 public class Calculator {
 	
 	static public void main(String[] args) {
-		System.out.println("Calculator TEST!!!!!!!");
+		System.out.println("Calculator TEST!!!!!!! CI/DI!!!!!!!!");
 	}
 
 	public int add(int a, int b) {
