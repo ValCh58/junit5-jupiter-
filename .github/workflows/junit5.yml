@@ -57,4 +57,4 @@ jobs:
             name: Package
             path: staging
         - name: Build project with Maven
-          run: java -jar junit5-jupiter-starter-maven-1.0.jar
+          run: java -jar staging/junit5-jupiter-starter-maven-1.0.jar
