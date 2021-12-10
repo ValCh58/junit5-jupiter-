@@ -1,0 +1,18 @@
+Init and create new local git -> To github.
+---------------------------------------------
+git init
+
+git remote add origin https://gitlab.com/crew-chief-systems/bot
+
+git remote -v (для проверки текущего репозитория)
+
+git add -A(добавить все файлы)
+
+git commit -m 'Added my project'
+
+git pull --rebase origin master
+
+git push  origin master
+----------------------------
+! git rebase --continue
+----------------------------
