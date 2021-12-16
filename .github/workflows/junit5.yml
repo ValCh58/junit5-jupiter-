@@ -71,7 +71,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           repo-token: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
       - name: Build Container image
-        run: docker build -t ${{ secrets.DOCKER_REPO }}:latest 
+        run: docker build -t ${{ secrets.DOCKER_REPO }}:latest .
         
       - name: Publish Docker image  - не работает
         run: docker push ${{ secrets.DOCKER_REPO }}
