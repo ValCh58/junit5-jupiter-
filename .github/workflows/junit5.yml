@@ -79,5 +79,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: chvaleriy/github-action:junit-v1
-          labels: chvaleriy/github-action:lable-v1
+          tags: chvaleriy/github-action:latest
+          #labels: chvaleriy/github-action:lable-v1
