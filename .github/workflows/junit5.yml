@@ -80,4 +80,4 @@ jobs:
           context: .
           push: true
           tags: chvaleriy/github-action:junit-v1
-          #labels: ${{ steps.meta.outputs.labels }}
+          labels: chvaleriy/github-action:lable-v1
