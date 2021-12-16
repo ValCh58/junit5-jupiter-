@@ -72,7 +72,8 @@ jobs:
                
       - name: Build Container image
         run: docker build -t ${{ secrets.DOCKER_REPO }}:latest .
-        
+      - name: uuu
+        run: chmod +x staging
       - name: Publish Docker image  - не работает
         run:  docker push ${{ secrets.DOCKER_REPO }}
       #- name: Build and push Docker image
