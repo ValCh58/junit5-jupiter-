@@ -79,5 +79,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: chvaleriy/github-action:junit-v1
+          #labels: ${{ steps.meta.outputs.labels }}
