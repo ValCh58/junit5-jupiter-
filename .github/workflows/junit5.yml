@@ -73,8 +73,8 @@ jobs:
       - name: Build Container image
         run: docker build -t ${{ secrets.DOCKER_REPO }}:latest .
         
-      - name: Publish Docker image  - не работает
-        run:  docker push ${{ secrets.DOCKER_REPO }}
+      - name: Publish Docker image
+        run:  docker push ${{ secrets.DOCKER_REPO }}:latest .
         
       #- name: Build and push Docker image
       #  uses: docker/build-push-action@v1
