@@ -71,9 +71,9 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
                
       - name: Build Container image
-        run: docker build --tag ${{ secrets.DOCKER_REPO }}:latest .
+        run: sudo docker build --tag ${{ secrets.DOCKER_REPO }}:latest .
         
       - name: Publish Docker image
-        run:  docker push ${{ secrets.DOCKER_REPO }}:latest
+        run: sudo docker push ${{ secrets.DOCKER_REPO }}:latest
         
      
