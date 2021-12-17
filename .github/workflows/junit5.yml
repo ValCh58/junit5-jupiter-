@@ -73,13 +73,13 @@ jobs:
       - name: Build Container image
         run: docker build -t ${{ secrets.DOCKER_REPO }}:latest .
         
-      - name: Publish Docker image
-        run:  docker push ${{ secrets.DOCKER_REPO }}:latest
+      #- name: Publish Docker image
+      #  run:  docker push ${{ secrets.DOCKER_REPO }}:latest
         
-      #- name: Build and push Docker image
-      #  uses: docker/build-push-action@v1
-      #  with:
-      #    context: .
-      #    push: true
-      #    tags: chvaleriy/github-action:latest
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v1
+        with:
+          context: .
+          push: true
+          tags: chvaleriy/github-action:latest
       #    #labels: chvaleriy/github-action:lable-v1
