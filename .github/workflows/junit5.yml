@@ -75,7 +75,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: chvaleriy/github-action:latest
+          tags: ${{ secrets.DOCKER_REPO }}:latest
 
    # steps:
    #   - name: Check Out Repo
